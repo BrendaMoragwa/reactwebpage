@@ -1,0 +1,79 @@
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    /* display: none !important; */
+    width: 250px !important;
+  }
+  .sidebar-wrapper {
+    /* display: none; */
+    position: fixed !important;
+    z-index: 10000;
+    top: 0px;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+  }
+  .sidebar-wrapper.show {
+    transform: translateX(0px);
+  }
+
+  .collapse {
+    position: relative !important;
+    left: 0px;
+    width: calc(100%);
+    padding-left: 15px;
+    padding-right: 15px;
+    left: 0px !important;
+  }
+
+  .top-header {
+    position: fixed;
+    top: 0px;
+    z-index: 9000;
+  }
+  .nav-link {
+    width: 100% !important;
+  }
+  .nav-link span {
+    font-size: 13px !important;
+  }
+
+  .menu-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9000;
+    top: 0px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .menu-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .user-detail-title {
+    min-width: 130px;
+  }
+  .top-bar-text {
+    font-size: 20px;
+  }
+
+  .text-input {
+    width: 255px;
+  }
+  .rdrDefinedRangesWrapper {
+    display: none;
+  }
+  .date-card {
+    max-width: 100%;
+  }
+  .sidebar-brand-text {
+    display: block !important;
+  }
+
+  .brand-title-text span {
+    /* font-weight: 800 !important; */
+  }
+}
